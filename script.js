@@ -64,7 +64,7 @@ function MoverRaquete() {
 
 function MoverRaqueteOponente() {
     rect(xRaqueteOponente, yRaqueteOponente, comprimentoRaquete, larguraRaquete);
-    yRaqueteOponente = yBolinha - larguraRaquete / 2; // Raquete do oponente segue a bola
+    yRaqueteOponente = yBolinha - larguraRaquete / 2; 
 }
 
 function VerificarColisaoRaquete(x, y) {
@@ -75,7 +75,7 @@ function VerificarColisaoRaquete(x, y) {
         yBolinha < y + larguraRaquete
     ) {
         vxBolinha *= -1;
-        xBolinha += vxBolinha; // Evita que a bola "grude" na raquete
+        xBolinha += vxBolinha; 
     }
 }
 
